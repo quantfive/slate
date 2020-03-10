@@ -40,7 +40,6 @@ function fixSelectionInZeroWidthBlock(window) {
 function AndroidPlugin({ editor }) {
   const observer = new CompositionManager(editor);
   window.androidObserver = observer;
-  editor.observer = observer;
 
   /**
    * handle `onCompositionStart`
@@ -77,7 +76,6 @@ function AndroidPlugin({ editor }) {
 
   function onComponentDidMount() {
     observer.connect();
-    document.addEventListener('blur', observer.onCompositionEnd);
   }
 
   /**
@@ -86,7 +84,6 @@ function AndroidPlugin({ editor }) {
 
   function onComponentDidUpdate() {
     observer.connect();
-    document.removeEventListener('blur', observer.onCompositionEnd);
   }
 
   /**

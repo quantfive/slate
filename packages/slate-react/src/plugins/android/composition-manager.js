@@ -386,7 +386,6 @@ function CompositionManager(editor) {
     const { document } = value
 
     const dataElement = domNode.closest(`[data-key]`)
-    debugger
     const key = dataElement.dataset.key
     const path = document.getPath(key)
     const block = document.getClosestBlock(key)
