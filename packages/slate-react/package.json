@@ -1,7 +1,7 @@
 {
   "name": "@quantfive/slate-react-16.6.3",
   "description": "A set of React components for building completely customizable rich-text editors.",
-  "version": "0.22.20",
+  "version": "0.22.31",
   "license": "MIT",
   "repository": "git://github.com/ianstormtaylor/slate.git",
   "main": "lib/slate-react.js",
@@ -32,8 +32,8 @@
   },
   "peerDependencies": {
     "immutable": ">=3.8.1 || >4.0.0-rc",
-    "react": ">=16.6.3",
-    "react-dom": ">=16.6.3",
+    "react": "16.6.3",
+    "react-dom": "16.6.3",
     "slate": ">=0.47.0"
   },
   "devDependencies": {
